@@ -16,12 +16,24 @@ const Navbar = () => {
       <div className="flex items-center">
         <img className="lg:w-40 h-10 w-28" src={logo} alt="#logo" />
         <div className="lg:flex hidden">
-          <Link className="text-lg font-bold px-4 text-gray-200">Home</Link>
-          <Link className="text-lg font-bold px-4 text-gray-200">Series</Link>
-          <Link className="text-lg font-bold px-4 text-gray-200">Movies</Link>
-          <Link className="text-lg font-bold px-4 text-gray-200">Pages</Link>
-          <Link className="text-lg font-bold px-4 text-gray-200">Pricing</Link>
-          <Link className="text-lg font-bold px-4 text-gray-200">Contact</Link>
+          <Link className="text-lg font-bold px-4 text-gray-200 hover:bg-red-600">
+            Home
+          </Link>
+          <Link className="text-lg font-bold px-4 text-gray-200 hover:bg-red-600">
+            Series
+          </Link>
+          <Link className="text-lg font-bold px-4 text-gray-200 hover:bg-red-600">
+            Movies
+          </Link>
+          <Link className="text-lg font-bold px-4 text-gray-200 hover:bg-red-600">
+            Pages
+          </Link>
+          <Link className="text-lg font-bold px-4 text-gray-200 hover:bg-red-600">
+            Pricing
+          </Link>
+          <Link className="text-lg font-bold px-4 text-gray-200 hover:bg-red-600">
+            Contact
+          </Link>
         </div>
       </div>
       <div className="lg:flex items-center gap-4 hidden">

@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick-theme.css";
 import { FaPlay } from "react-icons/fa";
 const Latest = () => {
   var settings = {
-    dots: true,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
@@ -20,7 +19,6 @@ const Latest = () => {
           slidesToShow: 2,
           slidesToScroll: 2,
           infinite: true,
-          dots: true,
           autoplay: true,
           speed: 3000,
           autoplaySpeed: 3000,
@@ -57,10 +55,12 @@ const Latest = () => {
       <div>
         <div>
           <div className="1st flex justify-between mx-10 py-10">
-            <h1 className="lg:text-3xl text-xl font-bold text-gray-200">
+            <h1 className="lg:text-3xl text-md font-bold text-gray-200">
               Recommended Movies
             </h1>
-            <h4 className="text-xl font-semibold text-red-600">View All</h4>
+            <h4 className="lg:text-xl text-md font-semibold text-red-600">
+              View All
+            </h4>
           </div>
 
           <div className="overflow-x-hidden overflow-y-hidden py-10 mx-10">

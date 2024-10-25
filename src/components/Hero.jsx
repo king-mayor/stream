@@ -7,7 +7,6 @@ import Slider from "react-slick";
 const Hero = () => {
   const [movies, setMovies] = useState([]);
   var settings = {
-    dots: true,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
