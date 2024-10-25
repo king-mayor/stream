@@ -20,16 +20,10 @@ const Navbar = () => {
             Home
           </Link>
           <Link className="text-lg font-bold px-4 text-gray-200 hover:bg-red-600">
-            Series
-          </Link>
-          <Link className="text-lg font-bold px-4 text-gray-200 hover:bg-red-600">
             Movies
           </Link>
           <Link className="text-lg font-bold px-4 text-gray-200 hover:bg-red-600">
             Pages
-          </Link>
-          <Link className="text-lg font-bold px-4 text-gray-200 hover:bg-red-600">
-            Pricing
           </Link>
           <Link className="text-lg font-bold px-4 text-gray-200 hover:bg-red-600">
             Contact
@@ -55,23 +49,17 @@ const Navbar = () => {
       {/* MOBILE SECTION */}
       {menu && (
         <div className="lg:hidden fixed top-16 text-center w-full bg-black py-10">
-          <div className="flex flex-col justify-center items-center gap-4 mx-10">
-            <Link className="text-lg font-bold px-4 text-white hover:bg-red-600 w-full rounded-lg">
+          <div className="flex flex-col justify-center items-center gap-6 mx-10">
+            <Link className="text-lg font-bold px-4 text-white hover:bg-red-600 w-full rounded-lg uppercase">
               Home
             </Link>
-            <Link className="text-xl font-bold px-4 text-white  hover:bg-red-600 w-full rounded-lg">
-              Series
-            </Link>
-            <Link className="text-xl font-bold px-4 text-white  hover:bg-red-600 w-full rounded-lg">
+            <Link className="text-xl font-bold px-4 text-white  hover:bg-red-600 w-full rounded-lg uppercase">
               Movies
             </Link>
-            <Link className="text-xl font-bold px-4 text-white  hover:bg-red-600 w-full rounded-lg">
+            <Link className="text-xl font-bold px-4 text-white  hover:bg-red-600 w-full rounded-lg uppercase">
               Pages
             </Link>
-            <Link className="text-xl font-bold px-4 text-white  hover:bg-red-600 w-full rounded-lg">
-              Pricing
-            </Link>
-            <Link className="text-xl font-bold px-4 text-white  hover:bg-red-600 w-full rounded-lg">
+            <Link className="text-xl font-bold px-4 text-white  hover:bg-red-600 w-full rounded-lg uppercase">
               Contact
             </Link>
           </div>
