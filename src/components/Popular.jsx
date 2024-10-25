@@ -56,7 +56,7 @@ const Latest = () => {
         <div>
           <div className="1st flex justify-between mx-10 py-10">
             <h1 className="lg:text-3xl text-md font-bold text-gray-200">
-              Recommended Movies
+              Recommended
             </h1>
             <h4 className="lg:text-xl text-md font-semibold text-red-600">
               View All
