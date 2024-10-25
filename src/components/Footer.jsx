@@ -10,7 +10,7 @@ const Footer = () => {
     <div>
       <div className="flex lg:justify-around lg:flex-row flex-col my-4 lg:mx-0 mx-10">
         <div className="1st lg:w-1/2 w-full">
-          <div className="flex gap-4">
+          <div className="flex lg:flex-row flex-col gap-4">
             <h2 className="text-white lg:text-lg text-sm font-bold">
               Terms of Use
             </h2>
