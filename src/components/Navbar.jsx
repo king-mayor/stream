@@ -26,7 +26,7 @@ const Navbar = () => {
             Pages
           </Link>
           <Link className="text-lg font-bold px-4 text-gray-200 hover:bg-red-600">
-            Contact
+            Login
           </Link>
         </div>
       </div>
@@ -60,7 +60,7 @@ const Navbar = () => {
               Pages
             </Link>
             <Link className="text-xl font-bold px-4 text-white  hover:bg-red-600 w-full rounded-lg uppercase">
-              Contact
+              Login
             </Link>
           </div>
         </div>

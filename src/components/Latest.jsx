@@ -58,7 +58,7 @@ const Latest = () => {
             <h1 className="lg:text-3xl text-md font-bold text-gray-200">
               Latest
             </h1>
-            <h4 className="lg:text-xl text-md font-semibold text-red-600">
+            <h4 className="lg:text-xl text-md font-semibold text-white bg-red-600 p-2 cursor-pointer">
               View All
             </h4>
           </div>

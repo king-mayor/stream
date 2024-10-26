@@ -56,9 +56,9 @@ const Upcomming = () => {
         <div>
           <div className="1st flex justify-between mx-10 py-10">
             <h1 className="lg:text-3xl text-md font-bold text-gray-200">
-              Upcomming
+              Upcoming
             </h1>
-            <h4 className="lg:text-xl text-md font-semibold text-red-600">
+            <h4 className="lg:text-xl text-md font-semibold  text-white bg-red-600 p-2 cursor-pointer">
               View All
             </h4>
           </div>
