@@ -6,7 +6,7 @@ import ScrollToTop from "./ScrollToTop";
 const Signup = () => {
   return (
     <div className="bg-neutral-90 h-screen">
-      <div className="bg-[url('./src/assets/movie-poster.jpg')] bg-cover bg-no-repeat bg-center h-screen w-full opacity-95">
+      <div className="bg-[url('src/assets/movie-poster.jpg')] bg-cover bg-no-repeat bg-center h-screen w-full opacity-95">
         <div className="py-36 flex flex-col justify-center items-center mx-10">
           <h1 className="lg:text-6xl text-4xl font-bold text-white">
             Unlimited movies, TV shows, and more
