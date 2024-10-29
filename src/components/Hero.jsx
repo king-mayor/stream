@@ -4,8 +4,13 @@ import { FaPlay } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { useContext } from "react";
+import { MovieContext } from "./MovieContext";
+import { Link } from "react-router-dom";
 const Hero = () => {
-  const [movies, setMovies] = useState([]);
+  // const [movies, setMovies] = useState([]);
+  const { movies } = useContext(MovieContext);
+  console.log(movies);
   var settings = {
     infinite: true,
     slidesToShow: 1,
@@ -15,21 +20,18 @@ const Hero = () => {
     autoplaySpeed: 3000,
     cssEase: "linear",
   };
-  const getMovies = async () => {
-    try {
-      fetch(
-        "https://api.themoviedb.org/3/trending/movie/day?api_key=f5166632c42086925b52b43e86c23c9a"
-      )
-        .then((res) => res.json())
-        .then((json) => setMovies(json.results));
-    } catch (error) {
-      console.log(error);
-    }
-    console.log(movies);
-  };
-  useEffect(() => {
-    getMovies();
-  }, []);
+  // const getMovies = async () => {
+  //   try {
+  //     fetch(
+  //       "https://api.themoviedb.org/3/trending/movie/day?api_key=f5166632c42086925b52b43e86c23c9a"
+  //     )
+  //       .then((res) => res.json())
+  //       .then((json) => setMovies(json.results));
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  //   console.log(movies);
+  // };
   return (
     <>
       <div className="overflow-x-hidden overflow-y-hidden">

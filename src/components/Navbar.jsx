@@ -14,9 +14,14 @@ const Navbar = () => {
   return (
     <div className="flex items-center lg:justify-around justify-between py-4 bg-black text-gray-200 fixed z-50 left-0 right-0">
       <div className="flex items-center">
-        <img className="lg:w-40 h-10 w-28" src={logo} alt="#logo" />
+        <Link to="/">
+          <img className="lg:w-40 h-10 w-28" src={logo} alt="#logo" />
+        </Link>
         <div className="lg:flex hidden">
-          <Link className="text-lg font-bold px-4 text-gray-200 hover:bg-red-600">
+          <Link
+            to="/"
+            className="text-lg font-bold px-4 text-gray-200 hover:bg-red-600"
+          >
             Home
           </Link>
           <Link className="text-lg font-bold px-4 text-gray-200 hover:bg-red-600">
@@ -25,7 +30,10 @@ const Navbar = () => {
           <Link className="text-lg font-bold px-4 text-gray-200 hover:bg-red-600">
             Pages
           </Link>
-          <Link className="text-lg font-bold px-4 text-gray-200 hover:bg-red-600">
+          <Link
+            to="/login"
+            className="text-lg font-bold px-4 text-gray-200 hover:bg-red-600"
+          >
             Login
           </Link>
         </div>
@@ -50,16 +58,22 @@ const Navbar = () => {
       {menu && (
         <div className="lg:hidden fixed top-16 text-center w-full bg-black py-10">
           <div className="flex flex-col justify-center items-center gap-6 mx-10">
-            <Link className="text-lg font-bold px-4 text-white hover:bg-red-600 w-full rounded-lg uppercase">
+            <Link
+              to="/"
+              className="text-lg font-bold px-4 py-2 text-white hover:bg-red-600 w-full rounded-lg uppercase"
+            >
               Home
             </Link>
-            <Link className="text-xl font-bold px-4 text-white  hover:bg-red-600 w-full rounded-lg uppercase">
+            <Link className="text-xl font-bold px-4 py-2 text-white  hover:bg-red-600 w-full rounded-lg uppercase">
               Movies
             </Link>
-            <Link className="text-xl font-bold px-4 text-white  hover:bg-red-600 w-full rounded-lg uppercase">
+            <Link className="text-xl font-bold px-4 py-2 text-white  hover:bg-red-600 w-full rounded-lg uppercase">
               Pages
             </Link>
-            <Link className="text-xl font-bold px-4 text-white  hover:bg-red-600 w-full rounded-lg uppercase">
+            <Link
+              to="/login"
+              className="text-xl font-bold px-4 py-2 text-white  hover:bg-red-600 w-full rounded-lg uppercase"
+            >
               Login
             </Link>
           </div>

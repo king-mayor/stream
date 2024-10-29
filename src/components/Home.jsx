@@ -8,14 +8,16 @@ import Footer from "./Footer";
 import ScrollToTop from "./ScrollToTop";
 const Home = () => {
   return (
-    <div className="overflow-x-hidden bg-neutral-900">
-      <Hero />
-      <Upcomming />
-      <Latest />
-      <NowPlaying />
-      <Popular />
-      <Footer />
-      <ScrollToTop />
+    <div className="bg-neutral-900 h-screen">
+      <div className="overflow-x-hidden bg-neutral-900">
+        <Hero />
+        <Upcomming />
+        <Latest />
+        <NowPlaying />
+        <Popular />
+        <Footer />
+        <ScrollToTop />
+      </div>
     </div>
   );
 };

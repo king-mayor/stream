@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { FaCirclePlay } from "react-icons/fa6";
 import { FaPlay } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { MovieContext } from "./MovieContext";
 const NowPlaying = () => {
-  const [movies, setMovies] = useState([]);
+  const { playMovie } = useContext(MovieContext);
   var settings = {
     infinite: true,
     slidesToShow: 1,
@@ -15,26 +16,26 @@ const NowPlaying = () => {
     autoplaySpeed: 3000,
     cssEase: "linear",
   };
-  const getMovies = async () => {
-    try {
-      fetch(
-        "https://api.themoviedb.org/3/movie/now_playing?api_key=f5166632c42086925b52b43e86c23c9a"
-      )
-        .then((res) => res.json())
-        .then((json) => setMovies(json.results));
-    } catch (error) {
-      console.log(error);
-    }
-    console.log(movies);
-  };
-  useEffect(() => {
-    getMovies();
-  }, []);
+  // const getMovies = async () => {
+  //   try {
+  //     fetch(
+  //       "https://api.themoviedb.org/3/movie/now_playing?api_key=f5166632c42086925b52b43e86c23c9a"
+  //     )
+  //       .then((res) => res.json())
+  //       .then((json) => setMovies(json.results));
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  //   console.log(movies);
+  // };
+  // useEffect(() => {
+  //   getMovies();
+  // }, []);
   return (
     <>
       <div className="overflow-x-hidden overflow-y-hidden">
         <Slider {...settings}>
-          {movies.map((movie) => (
+          {playMovie.map((movie) => (
             <div key={movie.id} className="">
               <div className="relative opacity-85 -z-50">
                 <img

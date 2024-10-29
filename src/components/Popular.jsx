@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaPlay } from "react-icons/fa";
+import { MovieContext } from "./MovieContext";
 const Latest = () => {
+  const { popular } = useContext(MovieContext);
   var settings = {
     infinite: true,
     slidesToShow: 3,
@@ -34,21 +36,21 @@ const Latest = () => {
       },
     ],
   };
-  const [movies, setMovies] = useState([]);
-  const getMovies = async () => {
-    try {
-      fetch(
-        "https://api.themoviedb.org/3/tv/popular?api_key=f5166632c42086925b52b43e86c23c9a"
-      )
-        .then((res) => res.json())
-        .then((json) => setMovies(json.results));
-    } catch (error) {
-      console.log(error);
-    }
-  };
-  useEffect(() => {
-    getMovies();
-  }, []);
+  // const [movies, setMovies] = useState([]);
+  // const getMovies = async () => {
+  //   try {
+  //     fetch(
+  //       "https://api.themoviedb.org/3/tv/popular?api_key=f5166632c42086925b52b43e86c23c9a"
+  //     )
+  //       .then((res) => res.json())
+  //       .then((json) => setMovies(json.results));
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
+  // useEffect(() => {
+  //   getMovies();
+  // }, []);
 
   return (
     <>
@@ -66,7 +68,7 @@ const Latest = () => {
           <div className="overflow-x-hidden overflow-y-hidden py-10 mx-10">
             <div className="">
               <Slider {...settings}>
-                {movies.map((movie) => (
+                {popular.map((movie) => (
                   <div
                     className="flex justify-center items-center w-56 h-60"
                     key={movie.id}

@@ -1,9 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaPlay } from "react-icons/fa";
+import { MovieContext } from "./MovieContext";
+import { Link } from "react-router-dom";
+
 const Upcomming = () => {
+  const { upcoming } = useContext(MovieContext);
+
   var settings = {
     infinite: true,
     slidesToShow: 3,
@@ -34,21 +39,21 @@ const Upcomming = () => {
       },
     ],
   };
-  const [movies, setMovies] = useState([]);
-  const getMovies = async () => {
-    try {
-      fetch(
-        "https://api.themoviedb.org/3/movie/upcoming?api_key=f5166632c42086925b52b43e86c23c9a"
-      )
-        .then((res) => res.json())
-        .then((json) => setMovies(json.results));
-    } catch (error) {
-      console.log(error);
-    }
-  };
-  useEffect(() => {
-    getMovies();
-  }, []);
+  // const [movies, setMovies] = useState([]);
+  // const getMovies = async () => {
+  //   try {
+  //     fetch(
+  //       "https://api.themoviedb.org/3/movie/upcoming?api_key=f5166632c42086925b52b43e86c23c9a"
+  //     )
+  //       .then((res) => res.json())
+  //       .then((json) => setMovies(json.results));
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
+  // useEffect(() => {
+  //   getMovies();
+  // }, []);
 
   return (
     <>
@@ -66,15 +71,17 @@ const Upcomming = () => {
           <div className="overflow-x-hidden overflow-y-hidden py-10 mx-10">
             <div className="">
               <Slider {...settings}>
-                {movies.map((movie) => (
+                {upcoming.map((movie) => (
                   <div
                     className="flex justify-center items-center w-56 h-60"
                     key={movie.id}
                   >
-                    <img
-                      className="hover:-translate-y-8 hover:border-l-8 hover:border-red-600 relative cursor-pointer"
-                      src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
-                    />
+                    <Link to={`/movie/${movie.id}`}>
+                      <img
+                        className="hover:-translate-y-8 hover:border-l-8 hover:border-red-600 relative cursor-pointer"
+                        src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                      />
+                    </Link>
                     <div>
                       <div className="flex flex-col justify-center items-center">
                         <div className="absolute bottom-10">

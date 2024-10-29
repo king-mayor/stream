@@ -18,7 +18,7 @@ const ScrollToTop = () => {
     });
   };
   return (
-    <div>
+    <div className="">
       <div
         className="text-4xl cursor-pointer fixed bottom-5 right-5 text-white"
         onClick={handleToggle}

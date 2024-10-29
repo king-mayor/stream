@@ -7,8 +7,8 @@ import appstore from "../assets/apple-app.png";
 import googleplay from "../assets/google-play.png";
 const Footer = () => {
   return (
-    <div>
-      <div className="flex lg:justify-around lg:flex-row flex-col my-4 lg:mx-0 mx-10">
+    <div className="">
+      <div className="flex lg:justify-around lg:flex-row flex-col lg:mx-0 mx-10 py-20">
         <div className="1st lg:w-1/2 w-full">
           <div className="flex lg:flex-row flex-col gap-4">
             <h2 className="text-white lg:text-lg text-sm font-bold">
@@ -24,7 +24,7 @@ const Footer = () => {
             </h2>
           </div>
           <div>
-            <p className="text-white lg:text-md text-sm my-4">
+            <p className="text-white lg:text-md text-sm py-4">
               © 2024 STREAMIT. All Rights Reserved. All videos and shows on this
               platform are trademarks of, and all related images and content are
               the property of, Streamit Inc. Duplication and copy of this is
