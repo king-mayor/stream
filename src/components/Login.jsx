@@ -8,7 +8,7 @@ const Login = () => {
   return (
     <div className="bg-black h-screen">
       <div className="">
-        <div className="py-36 flex justify-center bg-[url('src/assets/poster4.jpg')] h-screen w-full bg-cover bg-no-repeat bg-center">
+        <div className="py-36 flex justify-center bg-[url('../src/assets/poster4.jpg')] h-screen w-full bg-cover bg-no-repeat bg-center">
           <div className="bg-[#242121] flex flex-col gap-6 p-10 lg:w-1/2 w-full lg:mx-0 mx-10 text-center shadow-md shadow-stone-400">
             <h2 className="text-white text-3xl font-bold">Login</h2>
             <input
