@@ -11,7 +11,7 @@ const MovieDetails = () => {
   const data = MovieData.find((movie) => movie.id == id);
   return (
     <div>
-      <div className="py-36 bg-black h-screen">
+      <div className="py-36 bg-black h-screen overflow-x-hidden">
         <div className="flex items-center lg:flex-row flex-col gap-6 px-10 bg-black py-10">
           <div className="">
             <img
