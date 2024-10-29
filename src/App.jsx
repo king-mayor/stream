@@ -6,6 +6,8 @@ import "slick-carousel/slick/slick-theme.css";
 import Footer from "./components/Footer";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
+import Movies from "./components/Movies";
+import MovieDetails from "./components/MovieDetails";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/movies" element={<Movies />} />
+          <Route path="/movie/:id" element={<MovieDetails />} />
         </Routes>
       </Router>
     </div>

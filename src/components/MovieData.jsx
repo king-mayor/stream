@@ -1,21 +1,21 @@
 export const MovieData = [
-  {
-    adult: false,
-    backdrop_path: "/3V4kLQg0kSqPLctI5ziYWabAZYF.jpg",
-    genre_ids: (3)[(878, 28, 12)],
-    id: 912649,
-    original_language: "en",
-    original_title: "Venom: The Last Dance",
-    overview:
-      "Eddie and Venom are on the run. Hunted by both of their worlds and with the net closing in, the duo are forced into a devastating decision that will bring the curtains down on Venom and Eddie's last dance.",
-    popularity: 7523.862,
-    poster_path: "/k42Owka8v91trK1qMYwCQCNwJKr.jpg",
-    release_date: "2024-10-22",
-    title: "Venom: The Last Dance",
-    video: false,
-    vote_average: 6.5,
-    vote_count: 225,
-  },
+  // {
+  //   adult: false,
+  //   backdrop_path: "/3V4kLQg0kSqPLctI5ziYWabAZYF.jpg",
+  //   genre_ids: (3)[(878, 28, 12)],
+  //   id: 912649,
+  //   original_language: "en",
+  //   original_title: "Venom: The Last Dance",
+  //   overview:
+  //     "Eddie and Venom are on the run. Hunted by both of their worlds and with the net closing in, the duo are forced into a devastating decision that will bring the curtains down on Venom and Eddie's last dance.",
+  //   popularity: 7523.862,
+  //   poster_path: "/k42Owka8v91trK1qMYwCQCNwJKr.jpg",
+  //   release_date: "2024-10-22",
+  //   title: "Venom: The Last Dance",
+  //   video: false,
+  //   vote_average: 6.5,
+  //   vote_count: 225,
+  // },
   {
     adult: false,
     backdrop_path: "/v9acaWVVFdZT5yAU7J2QjwfhXyD.jpg",

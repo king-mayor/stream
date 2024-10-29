@@ -24,7 +24,10 @@ const Navbar = () => {
           >
             Home
           </Link>
-          <Link className="text-lg font-bold px-4 text-gray-200 hover:bg-red-600">
+          <Link
+            to="/movies"
+            className="text-lg font-bold px-4 text-gray-200 hover:bg-red-600"
+          >
             Movies
           </Link>
           <Link className="text-lg font-bold px-4 text-gray-200 hover:bg-red-600">
@@ -64,7 +67,10 @@ const Navbar = () => {
             >
               Home
             </Link>
-            <Link className="text-xl font-bold px-4 py-2 text-white  hover:bg-red-600 w-full rounded-lg uppercase">
+            <Link
+              to="/movies"
+              className="text-xl font-bold px-4 py-2 text-white  hover:bg-red-600 w-full rounded-lg uppercase"
+            >
               Movies
             </Link>
             <Link className="text-xl font-bold px-4 py-2 text-white  hover:bg-red-600 w-full rounded-lg uppercase">
