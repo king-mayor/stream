@@ -30,9 +30,11 @@ const Login = () => {
               login
             </button>
             <div className="flex gap-4 py-4">
-              <p className="text-white text-2xl">Don't have an account?</p>
+              <p className="text-white lg:text-2xl text-md">
+                Don't have an account?
+              </p>
               <Link to="/signup">
-                <button className="text-white bg-red-600 cursor-pointer font-bold py-1 px-4 uppercase  hover:bg-red-700">
+                <button className="text-white bg-red-600 cursor-pointer font-bold py-1 px-4 uppercase lg:text-xl text-md  hover:bg-red-700">
                   Sign up
                 </button>
               </Link>
