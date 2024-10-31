@@ -22,7 +22,11 @@ const About = () => {
             Streamit is a Media and Entertainment Company, We provide our
             viewers and subscribers with the following services
           </p>
-          <img className="w-72 py-6 rounded-2xl" src={Banner2} alt="banner" />
+          <img
+            className="lg:w-72 w-full py-6 rounded-2xl"
+            src={Banner2}
+            alt="banner"
+          />
           <p className="text-white text-md py-2">
             1. Business/Brand promotion We help businesses and brands like yours
             generate more profits by building awareness, driving web traffic,
@@ -38,7 +42,7 @@ const About = () => {
         <div className="2nd py-4">
           <h2 className="py-2 text-white text-xl">2. MOVIE BLOCKBUSTERS</h2>
           <img
-            className="w-72 py-6 rounded-2xl"
+            className="lg:w-72 w-full py-6 rounded-2xl"
             src={blockbuster}
             alt="#blockbuster"
           />
@@ -57,7 +61,11 @@ const About = () => {
           <h2 className="py-2 text-white text-xl">
             3. WEB APPLICATION DESIGN/MAINTENANCE
           </h2>
-          <img className="w-72 py-6 rounded-2xl" src={worker3} alt="#worker3" />
+          <img
+            className="lg:w-72 w-full py-6 rounded-2xl"
+            src={worker3}
+            alt="#worker3"
+          />
           <p className="text-md text-white py-4">
             Are you just starting a Business or company? and you need a
             professional website to promote your business and give it the
@@ -78,7 +86,11 @@ const About = () => {
         </div>
         <div className="4th py-4">
           <h2 className="py-2 text-white text-xl">4. CONDUCIVE WORKSPACE</h2>
-          <img className="w-72 py-6 rounded-2xl" src={service} alt="team" />
+          <img
+            className="lg:w-72 w-full py-6 rounded-2xl"
+            src={service}
+            alt="team"
+          />
           <p className="text-md text-white py-4">
             Take your productivity to another level. We offer the best and
             unique WORKSPACE
