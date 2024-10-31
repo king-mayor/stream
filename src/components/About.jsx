@@ -27,10 +27,13 @@ const About = () => {
             src={Banner2}
             alt="banner"
           />
+          <h2 className="py-2 text-white text-xl uppercase">
+            1. Business/Brand promotion
+          </h2>
           <p className="text-white text-md py-2">
-            1. Business/Brand promotion We help businesses and brands like yours
-            generate more profits by building awareness, driving web traffic,
-            connecting with customers, and growing overall sales.
+            We help businesses and brands like yours generate more profits by
+            building awareness, driving web traffic, connecting with customers,
+            and growing overall sales.
           </p>
           <p className="text-white text-md py-2">
             *We provide the largest engagement on your campaigns and
