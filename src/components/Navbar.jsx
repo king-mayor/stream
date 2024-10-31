@@ -30,8 +30,11 @@ const Navbar = () => {
           >
             Movies
           </Link>
-          <Link className="text-lg font-bold px-4 text-gray-200 hover:bg-red-600">
-            Pages
+          <Link
+            to="/about"
+            className="text-lg font-bold px-4 text-gray-200 hover:bg-red-600"
+          >
+            About us
           </Link>
           <Link
             to="/login"
@@ -43,16 +46,16 @@ const Navbar = () => {
       </div>
       <div className="lg:flex items-center gap-4 hidden">
         <div>
-          <IoSearchCircleOutline className="text-4xl font-bold cursor-pointer text-gray-200" />
+          <IoSearchCircleOutline className="text-4xl font-bold cursor-pointer text-gray-200 hover:text-red-600" />
         </div>
         <div>
-          <HiOutlineBellAlert className="text-4xl font-bold cursor-pointer text-gray-200" />
+          <HiOutlineBellAlert className="text-4xl font-bold cursor-pointer text-gray-200 hover:text-red-600" />
         </div>
         <div>
-          <FaRegUserCircle className="text-4xl font-bold cursor-pointer text-gray-200" />
+          <FaRegUserCircle className="text-4xl font-bold cursor-pointer text-gray-200 hover:text-red-600" />
         </div>
         <div>
-          <button className="bg-red-600 text-gray-100 py-2 px-6 cursor-pointer outline-none border-none font-bold rounded-2xl">
+          <button className="bg-red-600 hover:bg-red-800 text-gray-100 py-2 px-6 cursor-pointer outline-none border-none font-bold rounded-2xl">
             Subscribe Now
           </button>
         </div>
@@ -73,8 +76,11 @@ const Navbar = () => {
             >
               Movies
             </Link>
-            <Link className="text-xl font-bold px-4 py-2 text-white  hover:bg-red-600 w-full rounded-lg uppercase">
-              Pages
+            <Link
+              to="/about"
+              className="text-xl font-bold px-4 py-2 text-white  hover:bg-red-600 w-full rounded-lg uppercase"
+            >
+              About us
             </Link>
             <Link
               to="/login"

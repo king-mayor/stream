@@ -8,6 +8,7 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import Movies from "./components/Movies";
 import MovieDetails from "./components/MovieDetails";
+import About from "./components/About";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/movies" element={<Movies />} />
           <Route path="/movie/:id" element={<MovieDetails />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </Router>
     </div>

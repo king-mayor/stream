@@ -4,6 +4,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaPlay } from "react-icons/fa";
 import { MovieContext } from "./MovieContext";
+import { Link } from "react-router-dom";
+
 const Latest = () => {
   const { popular } = useContext(MovieContext);
   var settings = {
@@ -60,9 +62,11 @@ const Latest = () => {
             <h1 className="lg:text-3xl text-md font-bold text-gray-200 uppercase">
               Recommended
             </h1>
-            <h4 className="lg:text-xl text-md font-semibold  text-white bg-red-600 p-2 cursor-pointer">
-              View All
-            </h4>
+            <Link to="/movies">
+              <h4 className="lg:text-xl text-md font-semibold  text-white bg-red-600 p-2 cursor-pointer">
+                View All
+              </h4>
+            </Link>
           </div>
 
           <div className="overflow-x-hidden overflow-y-hidden py-10 mx-10">
