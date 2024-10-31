@@ -22,6 +22,7 @@ const Signup = () => {
             <input
               className="border-none py-2 pl-2 outline-2 outline-red-900"
               type="email"
+              placeholder="Enter Email"
             />
             <button className="text-white bg-red-600 hover:bg-red-800 py-1 px-6 font-bold cursor-pointer">
               Get Started
