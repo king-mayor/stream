@@ -44,7 +44,7 @@ const Hero = () => {
                   src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
                 />
               </div>
-              <div className="flex lg:flex-row lg:justify-center flex-col items-center px-10 ">
+              <div className="flex lg:flex-row lg:justify-center flex-col items-center text-wrap px-10 ">
                 <div className="absolute bottom-12 pb-20">
                   <div className="flex lg:flex-row flex-col lg:gap-32 gap-6">
                     <div className="1st">
@@ -64,14 +64,14 @@ const Hero = () => {
                         <FaPlay /> play now
                       </button>
                     </div>
-                    <div className="flex lg:gap-6 gap-2 items-center">
+                    {/* <div className="flex lg:gap-6 gap-2 items-center">
                       <h2>
                         <FaCirclePlay className="text-5xl text-white cursor-pointer hover:text-red-600" />
                       </h2>
                       <h2 className="text-red-600 font-bold lg:text-4xl text-2xl uppercase">
                         watch trailer
                       </h2>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

@@ -10,8 +10,8 @@ const Latest = () => {
   const { popular } = useContext(MovieContext);
   var settings = {
     infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 2,
+    slidesToScroll: 2,
     autoplay: true,
     speed: 3000,
     autoplaySpeed: 3000,
@@ -69,16 +69,16 @@ const Latest = () => {
             </Link>
           </div>
 
-          <div className="overflow-x-hidden overflow-y-hidden py-10 mx-10">
+          <div className="py-10 mx-10">
             <div className="">
               <Slider {...settings}>
                 {popular.map((movie) => (
                   <div
-                    className="flex justify-center items-center w-56 h-60"
+                    className="flex justify-center items-center gap-2 w-full h-60 text-center"
                     key={movie.id}
                   >
                     <img
-                      className="hover:-translate-y-8 hover:border-l-8 hover:border-red-600 relative cursor-pointer"
+                      className="hover:-translate-y-8 hover:border-l-8 hover:border-red-600 relative cursor-pointer w-full"
                       src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
                     />
                     <div>

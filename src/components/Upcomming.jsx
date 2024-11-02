@@ -11,8 +11,8 @@ const Upcomming = () => {
 
   var settings = {
     infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 2,
+    slidesToScroll: 2,
     autoplay: true,
     speed: 3000,
     autoplaySpeed: 3000,
@@ -70,7 +70,7 @@ const Upcomming = () => {
             </Link>
           </div>
 
-          <div className="overflow-x-hidden overflow-y-hidden py-10 mx-10">
+          <div className="py-10 mx-10">
             <div className="">
               <Slider {...settings}>
                 {upcoming.map((movie) => (
@@ -80,7 +80,7 @@ const Upcomming = () => {
                   >
                     <Link to={`/movie/${movie.id}`}>
                       <img
-                        className="hover:-translate-y-8 hover:border-l-8 hover:border-red-600 relative cursor-pointer"
+                        className="hover:-translate-y-8 hover:border-l-8 hover:border-red-600 relative cursor-pointer w-full"
                         src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
                       />
                     </Link>
