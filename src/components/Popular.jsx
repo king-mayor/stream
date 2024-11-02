@@ -74,12 +74,13 @@ const Latest = () => {
               <Slider {...settings}>
                 {popular.map((movie) => (
                   <div
-                    className="flex justify-center items-center gap-2 w-full h-60 text-center"
+                    className="flex justify-center items-center w-full h-60 text-center"
                     key={movie.id}
                   >
                     <img
                       className="hover:-translate-y-8 hover:border-l-8 hover:border-red-600 relative cursor-pointer w-full"
                       src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                      alt="popular-img"
                     />
                     <div>
                       <div className="flex flex-col justify-center items-center">

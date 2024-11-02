@@ -82,6 +82,7 @@ const Upcomming = () => {
                       <img
                         className="hover:-translate-y-8 hover:border-l-8 hover:border-red-600 relative cursor-pointer w-full"
                         src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                        alt="upcomming"
                       />
                     </Link>
                     <div>

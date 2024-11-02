@@ -18,7 +18,7 @@ export const MovieProvider = (props) => {
     } catch (error) {
       console.log(error);
     }
-    console.log(movies);
+    // console.log(movies);
   };
 
   const getUpcoming = async () => {
@@ -42,7 +42,7 @@ export const MovieProvider = (props) => {
     } catch (error) {
       console.log(error);
     }
-    console.log(movies);
+    // console.log(movies);
   };
   const getPopular = async () => {
     try {

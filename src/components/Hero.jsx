@@ -42,6 +42,7 @@ const Hero = () => {
                 <img
                   className="w-full h-[600px]"
                   src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                  alt="hero-background"
                 />
               </div>
               <div className="flex lg:flex-row lg:justify-center flex-col items-center text-wrap px-10 ">

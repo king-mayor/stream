@@ -41,6 +41,7 @@ const NowPlaying = () => {
                 <img
                   className="w-full h-[600px]"
                   src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                  alt="now-playing"
                 />
               </div>
               <div className="flex lg:flex-row lg:justify-center flex-col text-wrap items-center px-10 ">
