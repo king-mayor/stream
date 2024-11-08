@@ -5,6 +5,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { MovieContext } from "./MovieContext";
+import { Link } from "react-router-dom";
+
 const NowPlaying = () => {
   const { playMovie } = useContext(MovieContext);
   var settings = {
@@ -37,13 +39,15 @@ const NowPlaying = () => {
         <Slider {...settings}>
           {playMovie.map((movie) => (
             <div key={movie.id} className="">
-              <div className="relative opacity-85 -z-50">
-                <img
-                  className="w-full h-[600px]"
-                  src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
-                  alt="now-playing"
-                />
-              </div>
+              <Link to={`/movie/${movie.id}`}>
+                <div className="relative opacity-85 -z-50">
+                  <img
+                    className="w-full h-[600px]"
+                    src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                    alt="now-playing"
+                  />
+                </div>
+              </Link>
               <div className="flex lg:flex-row lg:justify-center flex-col text-wrap items-center px-10 ">
                 <div className="absolute bottom-12 pb-20">
                   <div className="flex lg:flex-row flex-col lg:gap-32 gap-6">
