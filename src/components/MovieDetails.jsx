@@ -10,8 +10,8 @@ const MovieDetails = () => {
   const { id } = useParams();
   const data = MovieData.find((movie) => movie.id == id);
   return (
-    <div>
-      <div className="py-36 bg-black h-screen overflow-x-hidden">
+    <div className="">
+      <div className="py-36 bg-black h-screen">
         <div className="flex items-center lg:flex-row flex-col gap-6 px-10 bg-black py-10">
           <div className="">
             <img
@@ -48,9 +48,11 @@ const MovieDetails = () => {
           </div>
         </div>
         {/* Youtube Video Section */}
-        <div className="bg-black py-10 flex justify-center">
-          <div className="">
-            <YouTube videoId="u9Mv98Gr5pY" className="" />
+        <div className="flex justify-center items-center overflow-x-hidden">
+          <div className="bg-black py-10 flex justify-center items-center w-full">
+            <div className="">
+              <YouTube videoId="u9Mv98Gr5pY" className="" />
+            </div>
           </div>
         </div>
         {/* Footer */}

@@ -7,9 +7,9 @@ import ScrollToTop from "./ScrollToTop";
 const Movies = () => {
   return (
     <>
-      <div className="bg-neutral-900">
-        <div className="">
-          <div className="mx-auto container grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-items-center gap-6 py-28">
+      <div className="bg-neutral-900 h-screen">
+        <div className="bg-neutral-900 w-full">
+          <div className="mx-auto container grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-items-center gap-6 py-28 bg-neutral-900">
             {MovieData.map((data) => (
               <div key={data.id} className=" text-center">
                 <Link to={`/movie/${data.id}`}>
