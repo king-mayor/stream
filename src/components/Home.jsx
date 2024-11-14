@@ -6,7 +6,7 @@ import Upcomming from "./Upcomming";
 import Popular from "./Popular";
 import Footer from "./Footer";
 import ScrollToTop from "./ScrollToTop";
-import RingLoader from "react-spinners/RingLoader";
+import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -19,7 +19,7 @@ const Home = () => {
     <>
       {loading ? (
         <div className="bg-neutral-900 flex justify-center items-center w-full h-screen">
-          <RingLoader color="darkred" size={70} />
+          <ClimbingBoxLoader color="darkred" size={36} />
         </div>
       ) : (
         <div className="bg-neutral-900 h-screen">
