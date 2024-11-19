@@ -61,6 +61,7 @@ const Navbar = () => {
         </div>
       </div>
       {/* MOBILE SECTION */}
+
       {menu && (
         <div className="lg:hidden fixed top-16 text-center w-full bg-black py-10">
           <div className="flex flex-col justify-center items-center gap-6 mx-10">
