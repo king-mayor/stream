@@ -125,11 +125,31 @@ const About = () => {
                   Contact us now for more enquiry
                 </p>
                 <div className="flex gap-2 py-4">
-                  <img className="text-md" src={twitter} alt="twitter" />
-                  <img className="text-md" src={whatsap} alt="whatsap" />
-                  <img className="text-md" src={instagram} alt="instagram" />
-                  <img className="text-md" src={facebook} alt="facebook" />
-                  <img className="text-md" src={youtube} alt="youtube" />
+                  <img
+                    className="text-md cursor-pointer"
+                    src={twitter}
+                    alt="twitter"
+                  />
+                  <img
+                    className="text-md cursor-pointer"
+                    src={whatsap}
+                    alt="whatsap"
+                  />
+                  <img
+                    className="text-md cursor-pointer"
+                    src={instagram}
+                    alt="instagram"
+                  />
+                  <img
+                    className="text-md cursor-pointer"
+                    src={facebook}
+                    alt="facebook"
+                  />
+                  <img
+                    className="text-md cursor-pointer"
+                    src={youtube}
+                    alt="youtube"
+                  />
                 </div>
               </div>
             </div>
