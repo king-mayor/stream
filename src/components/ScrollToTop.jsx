@@ -20,7 +20,7 @@ const ScrollToTop = () => {
   return (
     <div className="">
       <div
-        className="text-5xl cursor-pointer fixed bottom-5 right-5 text-white"
+        className="text-5xl cursor-pointer fixed bottom-5 right-5 text-white hover:text-red-600"
         onClick={handleToggle}
       >
         {show && <FaArrowCircleUp />}
